@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757276726544",
+    "project_id": "appscare-53247",
+    "storage_bucket": "appscare-53247.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757276726544:android:117f648e3b5ad9380e4195",
+        "android_client_info": {
+          "package_name": "com.example.appscare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd2kb858OmNPkpI7raBoBUYHx8fyx2U10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

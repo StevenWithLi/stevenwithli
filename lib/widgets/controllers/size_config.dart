@@ -12,42 +12,33 @@ class SizeConfig {
   }
 
   // Responsive Text
-  static double text(double size) {
-    return (size / 375) * screenWidth; // 375 = width iPhone X baseline
-  }
+  static double text(double size) => (size / 375) * screenWidth;
 
   // Responsive Height
-  static double height(double value) {
-    return (value / 812) * screenHeight; // 812 = height iPhone X baseline
-  }
+  static double height(double value) => (value / 812) * screenHeight;
 
   // Responsive Width
-  static double width(double value) {
-    return (value / 375) * screenWidth;
-  }
+  static double width(double value) => (value / 375) * screenWidth;
 
   // Responsive Radius
-  static double radius(double r) {
-    return (r / 375) * screenWidth;
-  }
+  static double radius(double r) => (r / 375) * screenWidth;
 
   // Responsive Icon
-  static double icon(double size) {
-    return (size / 375) * screenWidth;
-  }
+  static double icon(double size) => (size / 375) * screenWidth;
 
-  // Responsive Padding (horizontal)
-  static EdgeInsets paddingH(double value) {
-    return EdgeInsets.symmetric(horizontal: width(value));
-  }
+  // Responsive Padding
+  static EdgeInsets paddingH(double value) =>
+      EdgeInsets.symmetric(horizontal: width(value));
 
-  // Responsive Padding (vertical)
-  static EdgeInsets paddingV(double value) {
-    return EdgeInsets.symmetric(vertical: height(value));
-  }
+  static EdgeInsets paddingV(double value) =>
+      EdgeInsets.symmetric(vertical: height(value));
 
-  // Responsive Padding all sides
-  static EdgeInsets paddingAll(double value) {
-    return EdgeInsets.all(width(value));
-  }
+  static EdgeInsets paddingAll(double value) => EdgeInsets.all(width(value));
+}
+
+// GAP – Responsive SizedBox helper
+class Gap {
+  static Widget v(double h) => SizedBox(height: SizeConfig.height(h));
+
+  static Widget h(double w) => SizedBox(width: SizeConfig.width(w));
 }
