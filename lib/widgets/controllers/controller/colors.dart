@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // ========= PRIMARY =========
-  static const Color primary = Color(0xFF3D81E0);
+  static const Color primary_v2 = Color(0xFF3D81E0);
+  static const Color primary = Color(0xD15222C2);
   static const Color secondPrimary = Color(0xFF3569FF);
-  static const Color extraBoldPurple = Color(0xFF5222AF);
+  static const Color extraBoldPurple = Color(0xFF6B4ACF);
+  static const Color extraBoldPurple_v2 = Color(0xFF6244BE);
 
   // ========= PRIMARY SWATCH (VARIASI PURPLE) =========
   static const Color lightPurple = Color(0x80A78BFA);
